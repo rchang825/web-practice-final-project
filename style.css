@@ -1,0 +1,72 @@
+html {
+    font-family: sans-serif;
+    color: darkslategrey;
+    background-color: white;
+}
+header {
+    height: 64px;
+}
+header .content {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+header .logo {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 24px;
+    height: 32px;
+}
+header img {
+    
+}
+header p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 2em;
+}
+header nav ul {
+    display: flex;
+    padding-right: 24px;
+    list-style-type: none;
+}
+nav li {
+    padding-left: 16px;
+}
+.gray {
+    background-color: rgb(205, 220, 235);
+    width: 100%;
+}
+.big {
+    padding: 32px 24px;
+    width: 60%
+}
+.big img {
+    width: 100%;
+}
+.ad {
+    display: inline-flex;
+}
+.blurb {
+    padding-top: 175px;
+    padding-left: 24px;
+    padding-right: 100px;
+    width: 30%
+}
+.blurb h1 {
+    font-size: 4em;
+}
+.blurb p {
+    font-size: 2.25em;
+}
+button {
+    width: 90%;
+    padding: 8px;
+    font-size: 1.75em;
+    background-color: slategrey;
+    color: white;
+}
+video {
+    width: 100%
+}
