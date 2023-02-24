@@ -40,7 +40,7 @@ nav li {
 }
 .big {
     padding: 32px 24px;
-    width: 60%
+    width: 60%;
 }
 .big img {
     width: 100%;
@@ -48,16 +48,16 @@ nav li {
 .ad {
     display: inline-flex;
 }
-.blurb {
+.mission-statement {
     padding-top: 175px;
     padding-left: 24px;
     padding-right: 100px;
     width: 30%
 }
-.blurb h1 {
+.mission-statement h1{
     font-size: 4em;
 }
-.blurb p {
+.mission-statement p {
     font-size: 2.25em;
 }
 button {
@@ -66,6 +66,60 @@ button {
     font-size: 1.75em;
     background-color: slategrey;
     color: white;
+}
+.testimonial h1 {
+    font-size: 3.75em;
+    margin-bottom: 24px;
+    margin-block-start: 0;
+}
+.testimonial p {
+    margin-bottom: 24px;
+    font-size: 1.5em;
+}
+.testimonial h3 {
+    font-weight: 200;
+}
+.testimonial {
+    display: inline-flex;
+}
+.under-image {
+    margin-top: 32px;
+    padding-right: 10px;
+}
+.recent {
+    width: 35%;
+    padding: 32px 16px;
+}
+.panel:first-child {
+    padding-top: 0;
+}
+.panel {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.panel-image {
+    width: 35%;
+}
+.panel-image img {
+    width: 100%;
+    margin: auto;
+}
+.panel-content {
+    padding: 40px 20px;
+    width: 65%;
+}
+.panel-content h2, .panel-content p, .panel-content a {
+    margin: 8px;
+}
+.panel-content h2 {
+    font-size: 2em;
+}
+.panel-content a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color:blueviolet
 }
 video {
     width: 100%
