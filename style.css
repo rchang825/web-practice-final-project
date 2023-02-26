@@ -1,126 +1,177 @@
 html {
-    font-family: sans-serif;
-    color: darkslategrey;
-    background-color: white;
+  font-family: sans-serif;
+  color: darkslategrey;
+  background-color: white;
 }
 header {
-    height: 64px;
+  height: 64px;
 }
 header .content {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 24px;
+  width: 100%;
 }
 header .logo {
-    display: inline-flex;
-    margin-top: 20px;
-    margin-left: 24px;
-    height: 32px;
+  display: inline-flex;
+
+  height: 32px;
 }
-header img {
-    
+.image-container img {
+  width: 100%;
 }
-header p{
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-    line-height: 2em;
+header p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 2em;
 }
-header nav ul {
-    display: flex;
-    padding-right: 24px;
-    list-style-type: none;
+nav ul {
+  display: flex;
+  padding-right: 24px;
+  list-style-type: none;
+  margin-block: 0;
 }
 nav li {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 .gray {
-    background-color: rgb(205, 220, 235);
-    width: 100%;
+  background-color: rgb(205, 220, 235);
+  width: 100%;
 }
 .big {
-    padding: 32px 24px;
-    width: 60%;
+  padding: 32px 24px;
+  width: 60%;
 }
 .big img {
-    width: 100%;
+  width: 100%;
 }
 .ad {
-    display: inline-flex;
+  display: inline-flex;
 }
 .mission-statement {
-    padding-top: 175px;
-    padding-left: 24px;
-    padding-right: 100px;
-    width: 30%
+  /*padding-top: 175px;
+  padding-right: 100px;*/
+  padding-left: 24px;
+  width: 30%;
 }
-.mission-statement h1{
-    font-size: 4em;
+.mission-statement h1 {
+  font-size: 4em;
 }
 .mission-statement p {
-    font-size: 2.25em;
+  font-size: 2.25em;
 }
 button {
-    width: 90%;
-    padding: 8px;
-    font-size: 1.75em;
-    background-color: slategrey;
-    color: white;
+  width: 90%;
+  /*padding: 8px;*/
+  font-size: 1.75em;
+  background-color: slategrey;
+  color: white;
 }
 .testimonial h1 {
-    font-size: 3.75em;
-    margin-bottom: 24px;
-    margin-block-start: 0;
+  font-size: 3.75em;
+  margin-bottom: 24px;
+  margin-block-start: 0;
 }
 .testimonial p {
-    margin-bottom: 24px;
-    font-size: 1.5em;
+  margin-bottom: 24px;
+  font-size: 1.5em;
 }
 .testimonial h3 {
-    font-weight: 200;
+  font-weight: 200;
 }
 .testimonial {
-    display: inline-flex;
+  display: inline-flex;
 }
 .under-image {
-    margin-top: 32px;
-    padding-right: 10px;
+  margin-top: 32px;
+  padding-right: 10px;
 }
-.recent {
-    width: 35%;
-    padding: 32px 16px;
+.panels-container {
+  width: 35%;
+  padding: 32px 16px;
+  box-sizing: border-box;
 }
 .panel:first-child {
-    padding-top: 0;
+  padding-top: 0;
 }
 .panel {
-    display: inline-flex;
-    justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .panel-image {
-    width: 35%;
+  flex-basis: 35%;
 }
 .panel-image img {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 .panel-content {
-    padding: 40px 20px;
-    width: 65%;
+  flex-basis: 65%;
 }
-.panel-content h2, .panel-content p, .panel-content a {
-    margin: 8px;
+
+.centered-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.panel-content h2.panel-title {
+  margin-top: 0;
+}
+.panel-content h2,
+.panel-content p,
+.panel-content a {
+  margin: 8px;
 }
 .panel-content h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 .panel-content a {
-    font-size: 1.25em;
-    text-decoration: none;
-    color:blueviolet
+  font-size: 1.25em;
+  text-decoration: none;
+  color: rgb(199, 153, 241);
+}
+.learn h1,
+.thesis h1 {
+  padding-top: 32px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 2.5em;
+}
+.classes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  padding: 32px;
+}
+.class {
+  width: 28%;
+  background-color: white;
+  margin: 16px;
+}
+
+.class-content {
+  margin: 16px 16px 24px 16px;
 }
 video {
-    width: 100%
+  width: 100%;
+}
+.thesis-content {
+  display: flex;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid rgb(205, 220, 235);
+}
+footer h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
