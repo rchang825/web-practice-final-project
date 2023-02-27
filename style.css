@@ -6,12 +6,16 @@ html {
 header {
   height: 64px;
 }
-header .content {
+header .desktop-only {
   display: inline-flex;
   justify-content: space-between;
   margin-top: 20px;
   margin-left: 24px;
   width: 100%;
+}
+.header-mobile {
+  display: none;
+  height: 64px;
 }
 header .logo {
   display: inline-flex;
@@ -27,11 +31,17 @@ header p {
   margin: 0;
   line-height: 2em;
 }
-nav ul {
+.options {
+  display: flex;
+  justify-content: space-around;
+}
+.options ul,
+footer ul {
   display: flex;
   padding-right: 24px;
   list-style-type: none;
   margin-block: 0;
+  align-items: center;
 }
 nav li {
   padding-left: 16px;
@@ -43,6 +53,7 @@ nav li {
 .big {
   padding: 32px 24px;
   width: 60%;
+  box-sizing: border-box;
 }
 .big img {
   width: 100%;
@@ -53,21 +64,21 @@ nav li {
 .mission-statement {
   /*padding-top: 175px;
   padding-right: 100px;*/
-  padding-left: 24px;
+  padding: 0 24px;
   width: 30%;
 }
 .mission-statement h1 {
   font-size: 4em;
+  margin: 0;
 }
 .mission-statement p {
   font-size: 2.25em;
 }
 button {
-  width: 90%;
-  /*padding: 8px;*/
   font-size: 1.75em;
   background-color: slategrey;
   color: white;
+  width: 100%;
 }
 .testimonial h1 {
   font-size: 3.75em;
@@ -91,7 +102,6 @@ button {
 .panels-container {
   width: 35%;
   padding: 32px 16px;
-  box-sizing: border-box;
 }
 .panel:first-child {
   padding-top: 0;
@@ -101,6 +111,7 @@ button {
   justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
+  width: 100%;
 }
 .panel-image {
   flex-basis: 35%;
@@ -149,6 +160,7 @@ button {
   width: 85%;
   margin: auto;
   padding: 32px;
+  box-sizing: border-box;
 }
 .class {
   width: 28%;
@@ -174,4 +186,65 @@ footer {
 footer h3 {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+@media only screen and (max-width: 900px) {
+  header .desktop-only,
+  .desktop-only {
+    position: absolute;
+    z-index: -200;
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+  .options {
+    padding: 16px 0;
+  }
+  .ad {
+    display: block;
+  }
+
+  .mission-statement,
+  .big {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mission-statement h1 {
+    margin: 0;
+  }
+  .mission-statement p {
+    margin: 32px 0 0;
+  }
+  button {
+    display: block;
+    margin: 24px auto 32px auto;
+  }
+  .blurb {
+    display: none;
+    position: absolute;
+    z-index: -200;
+  }
+  .panels-container {
+    width: 100%;
+  }
+  .classes-container {
+    display: block;
+    width: 100%;
+  }
+  .class .image-container,
+  .class p {
+    display: none;
+  }
+  .class {
+    width: 100%;
+    margin: 0;
+  }
+  .class-title {
+    padding: 16px 0 24px 16px;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  footer nav {
+    display: none;
+  }
 }

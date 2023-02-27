@@ -7,7 +7,7 @@
 
   <body>
     <header>
-      <div class="content">
+      <div class="desktop-only">
         <div class="logo">
           <img src="./capstone_colmar_assets/images/ic-logo.svg" />
           <p>COLMAR ACADEMY</p>
@@ -15,10 +15,17 @@
         <nav class="options">
           <ul>
             <li>On campus</li>
-            <li>Online</li>
-            <li>or companies</li>
+            <li>Online for companies</li>
             <li>Sign in</li>
           </ul>
+        </nav>
+      </div>
+      <div class="header-mobile">
+        <nav class="options">
+          <img src="./capstone_colmar_assets/images/ic-logo.svg" />
+          <img src="./capstone_colmar_assets/images/ic-on-campus.svg" />
+          <img src="./capstone_colmar_assets/images/ic-online.svg" />
+          <img src="./capstone_colmar_assets/images/ic-login.svg" />
         </nav>
       </div>
     </header>
@@ -73,7 +80,7 @@
               />
             </div>
             <div class="centered-vertical panel-content">
-              <div class="">
+              <div>
                 <h2 class="panel-title">Our campus</h2>
                 <p class="panel-description">
                   Find which campus is close by you
@@ -192,15 +199,17 @@
               />
               Video not supported
             </video>
-            <h2>Reimagine urban</h2>
-            <p>
-              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
-              commodo lectus, nec consequat neque. Sed non accumsan urna.
-              Phasellus sed consequat ex. Etiam eget magna laoreet, efficity
-              dolor consequat, tristique ligula."
-            </p>
+            <div class="desktop-only">
+              <h2>Reimagine urban</h2>
+              <p>
+                "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+                commodo lectus, nec consequat neque. Sed non accumsan urna.
+                Phasellus sed consequat ex. Etiam eget magna laoreet, efficity
+                dolor consequat, tristique ligula."
+              </p>
+            </div>
           </div>
-          <div class="panels-container">
+          <div class="panels-container desktop-only">
             <div class="panel">
               <div class="image-container">
                 <img src="./capstone_colmar_assets/images/thesis-fisma.jpg" />
